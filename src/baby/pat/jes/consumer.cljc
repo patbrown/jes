@@ -27,7 +27,7 @@
 (def tags (tag/tags-for "consumer"))
 (def traits (trait/traits-for "consumer"))
 
-(def attrs [id card vt tags traits])
+(def attrs [id publisher variant topic-fn process-with tags traits])
 
 (def dt {:baby.pat.jes.dt/id       :baby.pat.jes.dt/consumer
          :baby.pat.jes.dt/parent   [:baby.pat.jes.dt/id :baby.pat.jes.dt/dt ]
