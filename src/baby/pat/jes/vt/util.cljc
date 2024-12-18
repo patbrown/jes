@@ -51,7 +51,7 @@
    This is a dumber case-based type dispatch."
   [thing ::vt/any]
   (if (fn? thing)
-    ::vt/vt/fn
+    ::vt/vt
     (cond
       (nil? thing) ::vt/nil
       (vector? thing) ::vt/vec

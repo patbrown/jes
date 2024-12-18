@@ -1,6 +1,6 @@
-(ns baby.pat.jes.reporter
+(ns baby.pat.jes.form
   (:require [baby.pat.jes.prim :refer [as-prim]]
             [baby.pat.jes.vt :as vt]))
 
-(def reporter (as-prim "reporter" ::vt/core-async-channel))
+(def form (as-prim "form" ::vt/fn))
 

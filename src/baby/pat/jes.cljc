@@ -13,5 +13,4 @@
    entity/dt
    prim/dt
    tag/dt
-   trait/dt
-   vt/dt])
+   trait/dt])

@@ -129,6 +129,7 @@
 (s/def ::ident-kw-or-str (s/or ::ident ::ident ::kw ::kw ::str ::str))
 (s/def ::ident-map-or-qkw (s/or ::ident ::ident ::qkw ::qkw ::map ::map))
 (s/def ::ident-idents-or-nil (s/or ::ident ::ident ::idents ::idents ::nil ::nil))
+(s/def ::atom-ident-or-map (s/or ::atom ::atom ::ident ::ident ::map ::map))
 (s/def ::fn-ident-or-map (s/or ::fn ::fn ::ident ::ident ::map ::map))
 (s/def ::fn-or-ident (s/or ::fn ::fn ::ident ::ident))
 (s/def ::has-64 (s/and ::coll (fn [thing] (= 64 (count thing)))))
